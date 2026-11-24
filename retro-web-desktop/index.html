@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Web Desktop</title>
+    <link rel="stylesheet" href="loginpage.css">
+</head>
+<body>
+    <!-- login page for to the desktop -->
+    <main class="login-window">
+        
+        <div class="title">
+            <span class="title-text">Welcome to WebDesk 99</span>
+            <div class="controls">
+                <button class="ctrl-btn">_</button>
+                <button class="ctrl-btn">🗖</button>
+                <button class="ctrl-btn">X</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="icon"><img src="key_win_alt.png" alt="Icon"></div>
+            <form class="login-page">
+                <p>Type a user name and password to log on to WebDesk.</p>
+                
+                <div class="input">
+                    <label for="username"><u>U</u>ser Name:</label>
+                    <input type="text" id="username" value="">
+                </div>
+                <div class="input">
+                    <label for="password"><u>P</u>assword:</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+                <p class="errtext" id="loginError">Incorrect password! Default: 1234</p>
+            </form>
+            <div class="lgn-btns">
+                    <button class="btn" onclick="Login()">OK</button>
+                    <button class="btn" onclick="clearForm()">Cancel</button>
+                </div>
+        </div>
+
+    </main>
+    <script src="users.js"></script>
+    <script src="loginpage.js"></script>
+</body>
+</html>

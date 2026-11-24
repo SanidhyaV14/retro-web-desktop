@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Web Desktop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="desktop-window" id="desktop">
+        <div class="icon-tray">
+            <div class="icon" onclick="spawnApp('Notepad', 'notepad.html', 'notepad_file-1.png')">
+                <img class="icon-img" src="notepad_file-1.png" alt="Notepad Icon">
+                <span>Notepad</span>
+            </div>
+            <div class="icon" onclick="spawnApp('Calculator', 'calculator.html', 'calculator-0.png')">
+                <img class="icon-img" src="calculator-0.png" alt="Calculator Icon">
+                <span>Calculator</span>
+            </div>
+        </div>
+
+        <div class="startmenu" id="start">
+            <div class="user" id="userbanner">
+                <img src="user.png" alt="User" class="menu-icon">
+                <span id="userNameText">???</span>
+            </div>
+            <button class="menu-item" onclick="spawnApp('Notepad', 'notepad.html', 'icons/notepad.png')">
+                <img src="notepad_file-1.png" alt="" class="menu-icon"> Notepad
+            </button>
+            <button class="menu-item" onclick="spawnApp('Calculator', 'calculator.html', 'icons/calculator.png')">
+                <img src="calculator-0.png" alt="" class="menu-icon"> Calculator
+            </button>
+            <hr class="menu-divider">
+            <button class="menu-item" onclick="logoutUser()">
+                <img src="shut_down.png" alt="" class="menu-icon"> Log Off...
+            </button>
+
+        </div>
+    </main>
+
+    <footer class="taskbar">
+        <button class="start-btn" id="startBtn">
+            <img src="Windows_Logo.webp" alt="" class="start-icon"> Start
+        </button>
+        
+        <div class="systray" id="clock">12:00 PM</div>
+    </footer>
+    
+    <script src="desktop.js"></script>
+</body>
+</html>
